@@ -4,7 +4,7 @@ $('.btn').click(()=>{
 
     $.post('/', { trueUrl: $('#trueUrl').val() }, response =>{
 
-      $('.shortenUrl').text( 'https://shortenurl-383915.wm.r.appspot.com/r/' + response )
+      $('.shortenUrl').text( 'mcafe.one:8081/r/' + response )
 
       console.log($('#trueUrl').val())
 
