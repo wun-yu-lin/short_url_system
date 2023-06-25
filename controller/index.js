@@ -1,5 +1,4 @@
 
-const { ReturnDocument } = require("mongodb");
 const Url = require("../model/urlDB");
 const router = require("express").Router();
 
