@@ -1,3 +1,34 @@
 # Shorten URL system
  短網址系統 [Shorten URL](http://54.206.62.215/)
-- 此作品集是透過 Node.js 及 Express 框架來進行 MVC 系統的實作，透過 Mongoose 套件串接 MongoDB Altas 資料庫
+- A website platform that can shorten URLs and redirect through a back-end server.
+  
+1. Verify that the short URL is not duplicated by accessing the database. Redirect a specific website through a shortened URL.
+2. Finish Model-view-controller (MVC) structure.
+3. Finish deploy project to AWS EC2.
+
+### **Technique Overview**
+- Database
+    - MongoDB (NoSQL)
+- AWS
+    - EC2
+- Frontend
+    - JavaScript
+    - AJAX
+    - CSS
+- Backend
+    - Node.js
+    - Express
+    - RESTful API
+    - npm
+    - Nginx
+    - dotenv
+
+
+## Highlights
+- Enter a URL, store the original URL in the database, generate a unique shortened URL, and enable redirection to the original URL.
+[Shorten URL](https://github.com/wun-yu-lin/short_url_system/blob/main/demo/shortenURL.gif?raw=true)
+
+  
+## Project architecture
+- Implementing an MVC system using the Node.js with Express framework, and integrating with the MongoDB Atlas database through the Mongoose package.
+[architecture]()
