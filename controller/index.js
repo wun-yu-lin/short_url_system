@@ -46,7 +46,7 @@ router.get("/getShortenUrl", (req,res) =>{
 
 
 //shortenUrl API
-router.post("/", async (req,res)=>{
+router.post("/api/url", async (req,res)=>{
     //check Url 是否在資料庫中有重複
         let urlCode = await confirmUsable(6);
         console.log(urlCode);
@@ -66,6 +66,24 @@ router.post("/", async (req,res)=>{
         }
     
 
+});
+
+router.get("/:url",(req,res)=>{
+    console.log("router /s")
+    console.log(req.params.url);
+    let shorten_url = req.params.url
+    console.log(`redirect: ${shorten_url} `);
+    if(shorten_url && shorten_url != 'undefined' && shorten_url != null){
+        Url.findOne({shortenUrl:shorten_url}).then((results)=>{
+            console.log(results.trueUrl);
+            res.redirect(results.trueUrl);
+        }).catch((err)=>{
+            console.log(err);
+            res.redirect("/",404);
+        })
+    }else{
+        res.send("shortUrl not find");
+    }
 });
 
 

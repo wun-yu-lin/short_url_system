@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 const indexController = require("./controller/index");
-const  redirectController = require("./controller/redirectUrl");
 
 
 
@@ -31,17 +30,14 @@ mongoose
   app.use(bodyParser.urlencoded({ extended: false }))
   app.use(bodyParser.json())
 
-  //首頁 導入短網址＋首頁呈現
+  //首頁 導入短網址＋首頁呈現 & 短網址Redircet API
   app.use("/", indexController); 
   
-
-  //短網址Redircet API
-  app.use('/r', redirectController);
 
 
 
   //port listener
-  app.listen(8081, (req, res) => {
-    console.log("Server running on port 8081 is running.");
+  app.listen(8080, (req, res) => {
+    console.log("Server running on port 8080 is running.");
   });
   
