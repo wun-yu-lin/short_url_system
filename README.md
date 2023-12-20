@@ -1,5 +1,5 @@
 # Shorten URL system
- 短網址系統 [Shorten URL](http://54.206.62.215/)
+ 短網址系統 [Shorten URL](https://ytrcloud.us/)
 - A website platform that can shorten URLs and redirect through a back-end server.
   
 1. Verify that the short URL is not duplicated by accessing the database. Redirect a specific website through a shortened URL.
