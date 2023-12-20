@@ -59,7 +59,7 @@ router.post("/", async (req,res)=>{
         try {
             await newUrl.save();
             console.log("Sucessful save to DB.")
-            res.send(urlCode);
+            res.send({shortenUrl:urlCode});
         } catch (error) {
             console.log(error);
             res.send("製作失敗");
