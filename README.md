@@ -26,9 +26,9 @@
 
 ## Highlights
 - Enter a URL, store the original URL in the database, generate a unique shortened URL, and enable redirection to the original URL.
-[Shorten URL](https://github.com/wun-yu-lin/short_url_system/blob/main/demo/shortenURL.gif?raw=true)
+  ![Shorten URL](https://github.com/wun-yu-lin/short_url_system/blob/main/demo/shortenURL.gif?raw=true)
 
   
 ## Project architecture
 - Implementing an MVC system using the Node.js with Express framework, and integrating with the MongoDB Atlas database through the Mongoose package.
-[architecture]()
+  ![architecture]()
