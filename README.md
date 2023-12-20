@@ -31,4 +31,4 @@
   
 ## Project architecture
 - Implementing an MVC system using the Node.js with Express framework, and integrating with the MongoDB Atlas database through the Mongoose package.
-  ![architecture]()
+  ![architecture](https://github.com/wun-yu-lin/short_url_system/blob/main/demo/architecture.png?raw=true)
